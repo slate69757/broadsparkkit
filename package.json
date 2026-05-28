@@ -1,0 +1,12 @@
+{
+  "name": "route-mapper-e928cf",
+  "version": "1.0.0",
+  "description": "A route mapper utility",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": ["route-mapper", "utility"],
+  "license": "MIT"
+}
