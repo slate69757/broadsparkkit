@@ -1,5 +1,5 @@
 'use strict';
-const MODULE = 'route-mapper-e928cf';
+const MODULE = 'route-mapper-217aa4';
 const delay = (ms) => new Promise(r => setTimeout(r, ms));
 const step = (name, ms = 5) => delay(ms).then(() => { console.log(`[${MODULE}] ${name} done`); return name; });
 async function pipeline() {

